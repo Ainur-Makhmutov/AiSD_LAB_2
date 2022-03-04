@@ -11,11 +11,12 @@ for i in range(0, len(array)):
             k_t = i
         else:
             n_t += 1
-        n = n_t
-        k = k_t
     else:
         n_t = 0
         k_t = 0
+    if n_t > n:
+        n = n_t
+        k = k_t
 
 
 if n != 0:

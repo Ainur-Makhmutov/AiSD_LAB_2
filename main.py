@@ -1,4 +1,4 @@
-n, n_t, k, k_t = 0, 0, 0, 0
+n, n_t, k, k_t = 0, 0, 0, -1
 array = []
 
 with open("C:/python/laba_2/in.txt", "r") as f:
@@ -6,14 +6,12 @@ with open("C:/python/laba_2/in.txt", "r") as f:
 
 for i in range(0, len(array)):
     if int(array[i]) % 2 == 0:
-        if k_t == 0:
-            n_t += 1
+        n_t += 1
+        if k_t == -1:
             k_t = i
-        else:
-            n_t += 1
     else:
         n_t = 0
-        k_t = 0
+        k_t = -1
     if n_t > n:
         n = n_t
         k = k_t

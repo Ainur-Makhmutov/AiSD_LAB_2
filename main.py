@@ -16,11 +16,9 @@ for i in range(0, len(array)):
         n = n_t
         k = k_t
 
-
 if n != 0:
     del array[k+n:]
     del array[0:k]
-
     print ("Последовательность четных чисел: ", array)
     print ("Длинна: ", n)
     print ("Позиция: ", k)

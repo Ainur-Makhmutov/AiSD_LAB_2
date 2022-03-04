@@ -23,7 +23,7 @@ if n != 0:
     del array[k+n:]
     del array[0:k]
 
-    print ("Массив: ", array)
+    print ("Последовательность четных чисел: ", array)
     print ("Длинна: ", n)
     print ("Позиция: ", k)
 else:

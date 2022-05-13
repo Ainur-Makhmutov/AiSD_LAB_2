@@ -41,7 +41,7 @@ try:
                 buffer = file.read(buffer_len)  # читаем очередной блок
                 
             if not buffer and len(work_buffer) >0 and not number_flag:       
-                print ("\nхвост файла text.txt не содержит ни одной цифры.")
+                print ("\nфайл text.txt не содержит ни одной цифры.")
                 break
                 
             if more_max_buffer_len:
@@ -75,7 +75,7 @@ try:
             print ("Длинна: ", lenght)
             print ("Позиция: ", position)
         else:
-            print ("В данном файле четных последовательностей нет") 
+            print ("В данном файле нет четных последовательностей") 
                 
 except FileNotFoundError:
     print("\nФайл text.txt в директории проекта не обнаружен.\nДобавьте файл в директорию или переименуйте существующий *.txt файл.") 
